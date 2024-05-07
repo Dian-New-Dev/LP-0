@@ -1,0 +1,479 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "Anton", sans-serif;
+    font-size: 70px;
+    color: rgb(38, 37, 53);
+}
+
+@media (max-width: 1199px) {
+    h1 {
+        font-size: 40px;
+
+    }
+}
+
+h2 {
+    font-weight: 400;
+    
+}
+
+@media (max-width: 1199px) {
+    h2 {
+        font-size: 18px;
+        line-height: 20px;
+
+    }
+}
+
+nav {
+    background-color: #32012F;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+   align-items: center;
+    z-index: 5;
+    color: #e7dddd;
+}
+
+
+.nav-desktop a {
+    text-decoration: inherit;
+    color: #e7dddd;
+    font-weight: 900;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 799px) {
+    .nav-desktop a {
+        display: none;
+    }
+
+}
+
+nav a:hover {
+    color: #F97300;
+    transform: scale(1.05);
+}
+
+
+
+.nav-mobile {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+
+@media (min-width: 800px) {
+    .nav-mobile {
+        display: none;
+    }
+}
+
+.logo-mobile img {
+    width: 50px;
+}
+
+.menu-mobile {
+    width: 100%;
+}
+
+.menu-hamburguer {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+.hamb-lines {
+  width: 30px;
+  border: 1px solid #e7dddd;
+  margin-bottom: 5px;
+  transform: translateY(0) rotate(0deg);
+  transition: transform 0.5s ease;
+}
+
+.hamb-menu-panel {
+	display: flex;
+    flex-direction: column;
+	position: fixed;
+	top: 50px;
+	right: -801px;
+	background-color: #32012F;
+	color: #e7dddd;
+	width: 80%;
+	font-size: 32px;
+	transition: right 0.5s ease;
+    z-index: 100;
+}
+
+.hamb-menu-panel a {
+    color: #e7dddd;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+li::marker {
+    display: none;
+}
+
+
+
+
+
+.hamb-menu-panel ul {
+    list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.li-wrapper {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.329);
+	padding: 20px;
+}
+
+.li-wrapper li {
+	list-style-type: none;
+}
+
+body {
+    background-color: #e7dddd;
+    font-family: "Lato", sans-serif;
+}
+
+header {
+    z-index: 1;
+}
+
+main {
+    z-index: 0;
+    overflow-x: hidden;
+}
+
+.dobra1-titulo {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.dobra1-wrapper {
+    display: flex;
+    margin: 0px 5vw;
+    position: relative;
+}
+
+@media (max-width: 800px) {
+    .dobra1-wrapper {
+        flex-direction: column-reverse;
+        margin: 10px 20px;
+
+    }
+}
+
+.dobra1-imagem {
+    flex: 0.5;
+}
+
+
+
+.dobra1-h1 {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+}
+
+@media (max-width: 1199px) {
+    .dobra1-h1 {
+        padding: 10vw 0px;
+
+    }
+}
+
+button {
+    width: 300px;
+    padding: 30px;
+    border-radius: 20px;
+    border: 0px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900; 
+    background-color: #F97300;
+    color: #f0f0f0;
+}
+
+@media (max-width: 1199px) {
+    button {
+        padding: 15px;
+        font-size: 18px;
+        width: 250px;
+
+    }
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #ff5100;
+}
+
+.dobra1-h1 * {
+    margin: 20px 0px;
+}
+
+@media (max-width: 1199px) {
+    .dobra1-h1 * {
+        margin: 10px 0px;
+
+    }
+}
+
+.dobra1-imagem {
+    z-index: 2;
+    position: relative;
+}
+
+.dobra1-imagem img {
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    .dobra1-imagem img {
+        width: 100%;
+        max-width: 600px;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 900px) {
+    .dobra1-imagem img {
+        width: 375px;
+        position: absolute;
+        bottom: 0;
+        left: -5vw;
+
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1199px) {
+    .dobra1-imagem img {
+        width: 375px;
+        position: absolute;
+        bottom: 0;
+        
+
+    }
+}
+
+.background-art {
+    width: 100%;
+    height:20%;
+    background-color: #32012F;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    clip-path: polygon(26% 0, 0% 100%, 100% 100%);
+
+}
+
+.dobra2-quem-sou-eu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 550px;
+    background-image: url(images/dobra2-art.jpg);
+    background-color: #e7dddd;
+    background-blend-mode: multiply;
+    background-position: 30% 10%;
+    border-top: 0.5px solid #e7dddd;
+    padding: 20px 0px;
+    padding-left: 200px;
+    padding-right: 50%;
+}
+
+@media (max-width: 800px) {
+    .dobra2-quem-sou-eu {
+        padding: 20px;
+        margin-top: -10px;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1199px) {
+    .dobra2-quem-sou-eu {
+        padding-left: 10vw;
+        padding-right: 25vw;
+        background-position: 30% 10%;
+    }
+}
+h3 {
+    font-weight: 900;
+    color: #32012F;
+    font-size: 32px;
+    border-bottom: 3px solid #32012F;
+    padding: 0;
+    margin: 0;
+
+}
+
+.dobra2-quem-sou-eu p {
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.curriculo {
+    display: flex;
+    align-items: center;
+    background-color: #e7ddddc2;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #32012f67;
+}
+
+.curriculo h4 {
+    border-right: 3px solid #32012F;
+    margin-right: 10px;
+}
+
+.curriculo p {
+    text-decoration: underline;
+    cursor: pointer; 
+}
+
+.dobra3-atuacao {
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.dobra3-atuacao h3 {
+    margin: 0px 5vw;
+}
+
+.dobra3-atuacao p {
+    margin-left: 5vw;
+    margin-right: 10vw;
+    font-size: 20px;
+}
+
+.dobra3-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 800px) {
+    .dobra3-wrapper {
+        flex-direction: column;
+    }
+}
+
+.servico-paineis {
+    width: 20%;
+    padding: 0px;
+    text-align: center;
+    background-color: #32012F;
+    color: #e7dddd;
+    margin: 20px 40px;
+    transition: transform 0.3s ease;
+
+
+}
+
+@media (max-width: 800px) {
+    .servico-paineis {
+        width: 80%;
+    }
+}
+
+.servico-paineis:hover {
+    transform: scale(1.05);
+    border: 1px solid black;
+}
+
+.servico-paineis img {
+    width: 100%;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+.dobra4-contato {
+    background-image: url('images/dobra4.jpeg');
+    background-position: 20% 10%; 
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 800px) {
+    .dobra4-contato {
+        background-position: 55% 10%;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1199px) {
+    .dobra4-contato {
+        background-position: 50% 10%;
+    }
+}
+
+
+.dobra4-contato p {
+    font-size: 20px;
+}
+
+.dobra4-wrapper {
+
+    padding: 20px 0px;
+    padding-left: 200px;
+    padding-right: 50%;
+
+
+}
+
+@media (max-width: 800px) {
+    .dobra4-wrapper {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1199px) {
+    .dobra4-wrapper {
+        padding-left: 10vw;
+        padding-right: 45vw;
+    }
+}
+
+.dobra4-wrapper * {
+    margin: 10px 0px;
+}
+
+.dobra4-contato h5 {
+    font-size: 32px;
+    font-weight: 900px; 
+}
+
+footer {
+    background-color: #32012F;
+    color: #e7dddd;
+    text-align: center;
+}
